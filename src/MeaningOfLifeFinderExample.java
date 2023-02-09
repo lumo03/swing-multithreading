@@ -17,7 +17,7 @@ public class MeaningOfLifeFinderExample {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		JFrame frame = new JFrame();
+		final JFrame frame = new JFrame();
 		frame.setSize(200, 100);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLocationRelativeTo(null);
@@ -26,7 +26,7 @@ public class MeaningOfLifeFinderExample {
 		label.setHorizontalAlignment(SwingConstants.CENTER);
 		frame.add(label);
 		
-		MeaningOfLifeFinder finder = new MeaningOfLifeFinder(label);
+		final MeaningOfLifeFinder finder = new MeaningOfLifeFinder(label);
 		finder.execute();
 		
 		frame.setVisible(true);
